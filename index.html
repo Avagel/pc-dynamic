@@ -4,149 +4,287 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="pc.css" />
-    <link rel="stylesheet" href="aos.css" />
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&family=Space+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <title>PC Dynamics</title>
   </head>
   <body>
-    <div class="navBar">
-      <a class="active" href="">Home</a>
-      <a href="">Shop</a>
-      <a href="">Services</a>
-      <a href="">Offers</a>
-      <a href="">About</a>m
-    </div>
+    <!-- NAV -->
+    <nav class="navBar">
+      <a class="nav-logo" href="">PC<span>Dynamics</span></a>
+      <div class="nav-links">
+        <a class="active" href="">Home</a>
+        <a href="">Shop</a>
+        <a href="">Services</a>
+        <a href="">Offers</a>
+        <a href="">About</a>
+      </div>
+      <button class="nav-cta">Get Started</button>
+    </nav>
 
+    <!-- HERO — untouched as instructed -->
     <div class="page page1">
       <div class="content">
         <section class="desc">
           <h1 class="siteName">Pc Dynamics</h1>
-          <h5>
+          <h5 class="siteDesc">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
             nisi at non, reprehenderit porro qui expedita, vel voluptatem
             repudiandae, amet similique cumque nesciunt consequuntur sapiente.
-            Nulla, ipsum nam repellat excepturi praesentium quaerat accusantium
-            minima cumque itaque sit tempora, harum fugiat? Consequatur
-            voluptate dignissimos voluptatem sit dicta, est itaque culpa
-            similique?
           </h5>
           <div style="display: flex; flex-wrap: wrap">
             <button class="getStarted">Get Started</button>
-            <button class="meet"><span>Meet</span></button>
+            <button class="meet "><span>Meet</span></button>
           </div>
         </section>
       </div>
     </div>
 
+    <!-- MAIN CONTENT -->
     <div class="container">
-      <div class="page page2">
-        <h2>Shop by Category</h2>
-
-        <div class="product-grid category-grid">
-          <div class="grid-item">
+      <!-- SECTION: CATEGORIES -->
+      <section class="section page2" id="shop">
+        <div class="section-header">
+          <span class="section-label">Browse</span>
+          <h2>Shop by Category</h2>
+        </div>
+        <div class="category-grid">
+          <div class="category-item" style="--delay: 0s">
             <img
               src="Media/wp6130674-gaming-computer-table-wallpapers.jpg"
-              alt="Sneakers"
+              alt="Gaming"
             />
-            <h3>Gaming</h3>
+            <div class="category-overlay">
+              <span class="category-tag">04 products</span>
+              <h3>Gaming</h3>
+              <a href="" class="category-link">Explore <span>→</span></a>
+            </div>
           </div>
-
-          <div class="grid-item">
+          <div class="category-item" style="--delay: 0.1s">
             <img
               src="Media/uuTvdO0-apple-macbook-wallpaper.jpg"
-              alt="Sneakers"
+              alt="MacBooks"
             />
-            <h3>Mac Books</h3>
+            <div class="category-overlay">
+              <span class="category-tag">12 products</span>
+              <h3>MacBooks</h3>
+              <a href="" class="category-link">Explore <span>→</span></a>
+            </div>
           </div>
-
-          <div class="grid-item">
+          <div class="category-item" style="--delay: 0.2s">
             <img
               src="Media/wp4495795-rome-flynn-wallpapers.jpg"
-              alt="Sneakers"
+              alt="Microsoft"
             />
-            <h3>Microsoft</h3>
+            <div class="category-overlay">
+              <span class="category-tag">08 products</span>
+              <h3>Microsoft</h3>
+              <a href="" class="category-link">Explore <span>→</span></a>
+            </div>
           </div>
-
-          <div class="grid-item">
+          <div class="category-item" style="--delay: 0.3s">
             <img
               src="Media/29 Stylish Home Office Setup Ideas for Small Spaces.jpg"
-              alt="Sneakers"
+              alt="Workstations"
             />
-            <h3>Work Stations</h3>
+            <div class="category-overlay">
+              <span class="category-tag">06 products</span>
+              <h3>Workstations</h3>
+              <a href="" class="category-link">Explore <span>→</span></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION: BANNER -->
+      <div class="banner">
+        <div class="banner-bg">
+          <img src="Media/wp13248081-office-laptop-wallpapers.png" alt="" />
+        </div>
+        <div class="banner-content">
+          <span class="banner-eyebrow">New Arrivals</span>
+          <h2 class="banner-title">Summer Collection<br /><em>2025</em></h2>
+          <p class="banner-sub">The latest in premium computing — redefined.</p>
+          <a href="" class="banner-btn">Shop Now <span>→</span></a>
+        </div>
+        <div class="banner-stat-group">
+          <div class="banner-stat">
+            <span class="stat-num">200+</span>
+            <span class="stat-label">Products</span>
+          </div>
+          <div class="banner-stat">
+            <span class="stat-num">50K+</span>
+            <span class="stat-label">Customers</span>
+          </div>
+          <div class="banner-stat">
+            <span class="stat-num">4.9★</span>
+            <span class="stat-label">Rating</span>
           </div>
         </div>
       </div>
 
-      <div class="trending mini-page">
-        <section class="minipage-content">
-          <h1>Summer Collection 2025</h1>
-          <h2>Discover the latest trend</h2>
-          <button class="shop">Shop Now</button>
-        </section>
-
-        <img
-          class="back-img"
-          src="Media/wp13248081-office-laptop-wallpapers.png"
-          alt=""
-        />
-      </div>
-
-      <div class="page page3">
-        <h2>Featured Products</h2>
-
-        <div class="product-grid featured-grid">
-          <div class="grid-item">
-            <div class="product-image">
-              <img src="Media/hp envy.png" alt="Sneakers" />
-            </div>
-            <p class="featured-name">Hp Pavilon Retro</p>
-            <p class="featured-price">$139</p>
-          </div>
-          <div class="grid-item">
-            <div class="product-image">
-              <img src="Media/hp envy.png" alt="Sneakers" />
-            </div>
-            <p class="featured-name">Hp Pavilon Retro</p>
-            <p class="featured-price">$139</p>
-          </div>
-          <div class="grid-item">
-            <div class="product-image">
-              <img src="Media/hp envy.png" alt="Sneakers" />
-            </div>
-            <p class="featured-name">Hp Pavilon Retro</p>
-            <p class="featured-price">$139</p>
-          </div>
-          <div class="grid-item">
-            <div class="product-image">
-              <img src="Media/hp envy.png" alt="Sneakers" />
-            </div>
-            <p class="featured-name">Hp Pavilon Retro</p>
-            <p class="featured-price">$139</p>
-          </div>
+      <!-- SECTION: FEATURED PRODUCTS -->
+      <section class="section page3">
+        <div class="section-header">
+          <span class="section-label">Handpicked</span>
+          <h2>Featured Products</h2>
         </div>
 
-        <div class="mini-page">
-          <section class="minipage-content">
-            <h1>Follow our Socials</h1>
-            <div class="socials">
-              <button class="social-item" title="social">
-                <img src="Media/Facebook.svg" alt="" />
-              </button>
-              <button class="social-item" title="social">
-                <img src="Media/LinkedIn.svg" alt="" />
-              </button>
-              <button class="social-item" title="social">
-                <img src="Media/Instagram.svg" alt="" />
-              </button>
+        <div class="featured-track">
+          <div class="featured-item">
+            <div class="product-badge">Best Seller</div>
+            <div class="product-img-wrap">
+              <img src="Media/hp envy.png" alt="HP Pavilion Retro" />
+              <div class="product-actions">
+                <button class="action-btn">♡ Wishlist</button>
+                <button class="action-btn primary">Add to Cart</button>
+              </div>
             </div>
-          </section>
+            <div class="product-info">
+              <p class="product-name">HP Pavilion Retro</p>
+              <div class="product-bottom">
+                <p class="product-price">$139</p>
+                <span class="product-rating">★ 4.8</span>
+              </div>
+            </div>
+          </div>
+          <div class="featured-item">
+            <div class="product-img-wrap">
+              <img src="Media/hp envy.png" alt="HP Envy Pro" />
+              <div class="product-actions">
+                <button class="action-btn">♡ Wishlist</button>
+                <button class="action-btn primary">Add to Cart</button>
+              </div>
+            </div>
+            <div class="product-info">
+              <p class="product-name">HP Envy Pro</p>
+              <div class="product-bottom">
+                <p class="product-price">$249</p>
+                <span class="product-rating">★ 4.6</span>
+              </div>
+            </div>
+          </div>
+          <div class="featured-item">
+            <div class="product-badge new">New</div>
+            <div class="product-img-wrap">
+              <img src="Media/hp envy.png" alt="HP Spectre x360" />
+              <div class="product-actions">
+                <button class="action-btn">♡ Wishlist</button>
+                <button class="action-btn primary">Add to Cart</button>
+              </div>
+            </div>
+            <div class="product-info">
+              <p class="product-name">HP Spectre x360</p>
+              <div class="product-bottom">
+                <p class="product-price">$399</p>
+                <span class="product-rating">★ 4.9</span>
+              </div>
+            </div>
+          </div>
+          <div class="featured-item">
+            <div class="product-img-wrap">
+              <img src="Media/hp envy.png" alt="HP EliteBook" />
+              <div class="product-actions">
+                <button class="action-btn">♡ Wishlist</button>
+                <button class="action-btn primary">Add to Cart</button>
+              </div>
+            </div>
+            <div class="product-info">
+              <p class="product-name">HP EliteBook</p>
+              <div class="product-bottom">
+                <p class="product-price">$319</p>
+                <span class="product-rating">★ 4.7</span>
+              </div>
+            </div>
+          </div>
+          <div class="featured-item">
+            <div class="product-img-wrap">
+              <img src="Media/hp envy.png" alt="HP Omen 16" />
+              <div class="product-actions">
+                <button class="action-btn">♡ Wishlist</button>
+                <button class="action-btn primary">Add to Cart</button>
+              </div>
+            </div>
+            <div class="product-info">
+              <p class="product-name">HP Omen 16</p>
+              <div class="product-bottom">
+                <p class="product-price">$499</p>
+                <span class="product-rating">★ 4.8</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-          <img
-            class="back-img"
-            src="Media/wp13248081-office-laptop-wallpapers.png"
-            alt=""
-          />
+      <!-- SECTION: SOCIAL -->
+      <div class="social-banner">
+        <div class="social-banner-bg">
+          <img src="Media/wp13248081-office-laptop-wallpapers.png" alt="" />
+        </div>
+        <div class="social-content">
+          <span class="section-label light">Community</span>
+          <h2>Follow Our Journey</h2>
+          <p>Stay connected for drops, deals & behind-the-scenes content.</p>
+          <div class="socials">
+            <a href="" class="social-item" title="Facebook">
+              <img src="Media/Facebook.svg" alt="Facebook" />
+              <span>Facebook</span>
+            </a>
+            <a href="" class="social-item" title="LinkedIn">
+              <img src="Media/LinkedIn.svg" alt="LinkedIn" />
+              <span>LinkedIn</span>
+            </a>
+            <a href="" class="social-item" title="Instagram">
+              <img src="Media/Instagram.svg" alt="Instagram" />
+              <span>Instagram</span>
+            </a>
+          </div>
         </div>
       </div>
+
+      <!-- FOOTER -->
+      <footer class="footer">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <span class="footer-logo">PC<em>D</em></span>
+            <p>Premium computing for every ambition.</p>
+          </div>
+          <div class="footer-links">
+            <div class="footer-col">
+              <h4>Shop</h4>
+              <a href="">Gaming</a>
+              <a href="">MacBooks</a>
+              <a href="">Microsoft</a>
+              <a href="">Workstations</a>
+            </div>
+            <div class="footer-col">
+              <h4>Company</h4>
+              <a href="">About Us</a>
+              <a href="">Careers</a>
+              <a href="">Press</a>
+              <a href="">Blog</a>
+            </div>
+            <div class="footer-col">
+              <h4>Support</h4>
+              <a href="">FAQ</a>
+              <a href="">Shipping</a>
+              <a href="">Returns</a>
+              <a href="">Contact</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2025 PC Dynamics. All rights reserved.</span>
+          <span>Privacy · Terms · Cookies</span>
+        </div>
+      </footer>
     </div>
+    <!-- /container -->
+
+    <script src="pc.js"></script>
   </body>
 </html>
